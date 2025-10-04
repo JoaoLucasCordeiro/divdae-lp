@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles, Users, Home, Zap } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center px-6 relative lg:pt-20 pt-20 pb-12 lg:pb-20">
+    <section className="min-h-screen flex items-center px-6 relative lg:pt-20 pt-14 pb-4 lg:pb-20">
       <div className="container mx-auto max-w-7xl w-full">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
           {/* Text Content */}

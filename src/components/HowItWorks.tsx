@@ -25,7 +25,7 @@ const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section id="como-funciona" className="py-32 px-6 relative">
+    <section id="como-funciona" className="py-16 lg:py-32 px-6 relative">
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-6xl lg:text-7xl font-black mb-8">
