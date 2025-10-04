@@ -8,7 +8,7 @@ import Features from './components/Features';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import Navbar from './components/NavBar';
-import FAQ from './components/FAQ';
+import FAQ from './components/Faq';
 
 const App: React.FC = () => {
   return (
