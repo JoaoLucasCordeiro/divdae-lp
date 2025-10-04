@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               <img 
                 src="/logo-hero.png" 
                 alt="Logo Divdaê" 
-                className="w-32 sm:w-40 md:w-48 lg:w-52 xl:w-56 h-auto transform hover:scale-105 transition-transform duration-300"
+                className="w-72 sm:w-80 md:w-96 lg:w-52 xl:w-56 h-auto transform hover:scale-105 transition-transform duration-300"
               />
             </div>
             <p className="text-white/70 text-lg leading-relaxed">
