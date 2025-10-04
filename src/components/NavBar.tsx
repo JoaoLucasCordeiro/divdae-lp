@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
              <img 
                src="/logo-navbar.png" 
                alt="Logo do divdaê" 
-               className="h-8 w-auto sm:h-10 md:h-12 lg:h-14 transition-all duration-300 group-hover:scale-105"
+               className="h-16 w-auto sm:h-18 md:h-20 lg:h-14 transition-all duration-300 group-hover:scale-105"
              />
             </div>
           </div>
@@ -65,11 +65,13 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="lg:hidden group relative bg-gradient-to-r from-[#DFFF00]/20 to-cyan-300/20 backdrop-blur-sm w-12 h-12 rounded-2xl flex items-center justify-center transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="lg:hidden w-12 h-12 rounded-2xl flex items-center justify-center transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl"
+            style={{
+              background: 'linear-gradient(to right, #DFFF00, #67E8F9)',
+            }}
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X size={24} className="text-[#4F00BC] relative z-10" /> : <Menu size={24} className="text-[#4F00BC] relative z-10" />}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#DFFF00]/20 to-cyan-300/20 rounded-2xl blur opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
+            {isOpen ? <X size={24} className="text-[#4F00BC]" /> : <Menu size={24} className="text-[#4F00BC]" />}
           </button>
         </div>
 
