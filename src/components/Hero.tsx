@@ -4,11 +4,20 @@ import { ArrowRight, Sparkles, Users, Home, Zap } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center px-6 relative lg:pt-20 pt-16 pb-8 lg:pb-20">
+    <section className="min-h-screen flex items-center px-6 relative lg:pt-20 pt-20 pb-12 lg:pb-20">
       <div className="container mx-auto max-w-7xl w-full">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-20 h-full">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
           {/* Text Content */}
-          <div className="flex-1 text-center lg:text-left relative flex flex-col justify-center min-h-screen lg:min-h-0 py-8 lg:py-0">
+          <div className="flex-1 text-center lg:text-left relative z-10">
+            {/* Logo Background for Mobile */}
+            <div className="absolute inset-0 lg:hidden flex items-center justify-center opacity-5 pointer-events-none">
+              <img 
+                src="/logo-hero.png" 
+                alt="" 
+                className="w-full max-w-md h-auto"
+              />
+            </div>
+            
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-2xl px-4 py-3 border border-white/20 mb-6 lg:mb-8 text-sm sm:text-base sm:px-6">
               <Sparkles size={20} className="text-[#DFFF00] flex-shrink-0" />
@@ -53,10 +62,15 @@ const Hero: React.FC = () => {
                 <span className="text-base lg:text-lg">Zero burocracia</span>
               </div>
             </div>
+
+            {/* Mobile Bottom Decoration */}
+            <div className="lg:hidden mt-12 flex justify-center">
+              <div className="w-20 h-1 bg-gradient-to-r from-[#DFFF00] to-cyan-300 rounded-full opacity-50"></div>
+            </div>
           </div>
 
-          {/* Logo Hero */}
-          <div className="flex-1 relative lg:block hidden">
+          {/* Logo Hero - Desktop only */}
+          <div className="flex-1 relative hidden lg:block">
             <div className="relative max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto">
               <img 
                 src="/logo-hero.png" 
