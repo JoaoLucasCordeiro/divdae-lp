@@ -1,6 +1,6 @@
 // components/Footer.tsx
 import React from 'react';
-import { Instagram, MessageCircle, Mail, Heart } from 'lucide-react';
+import { Instagram, Mail, Heart } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
