@@ -27,21 +27,14 @@ const Footer: React.FC = () => {
             {/* Social Links */}
             <div className="flex gap-6">
               <a 
-                href="#" 
+                href="https://instagram.com/dividaeapp" 
                 className="group w-14 h-14 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 border border-white/10 hover:border-white/20 hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram size={24} className="group-hover:text-[#DFFF00] transition-colors duration-300" />
               </a>
               <a 
-                href="#" 
-                className="group w-14 h-14 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 border border-white/10 hover:border-white/20 hover:scale-110"
-                aria-label="TikTok"
-              >
-                <MessageCircle size={24} className="group-hover:text-cyan-300 transition-colors duration-300" />
-              </a>
-              <a 
-                href="#" 
+                href="mailto:contato@dividaeapp@gmail.com"  
                 className="group w-14 h-14 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 border border-white/10 hover:border-white/20 hover:scale-110"
                 aria-label="Email"
               >
