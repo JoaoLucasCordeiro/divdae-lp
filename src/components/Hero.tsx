@@ -3,6 +3,11 @@ import React from 'react';
 import { ArrowRight, Sparkles, Users, Home, Zap } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="min-h-screen flex items-center px-6 relative lg:pt-20 pt-14 pb-4 lg:pb-20">
       <div className="container mx-auto max-w-7xl w-full">
@@ -21,11 +26,11 @@ const Hero: React.FC = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-2xl px-4 py-3 border border-white/20 mb-6 lg:mb-8 text-sm sm:text-base sm:px-6">
               <Sparkles size={20} className="text-[#DFFF00] flex-shrink-0" />
-              <span className="font-semibold">A partir de R$ 10/mês • Em breve para Android</span>
+              <span className="font-semibold">Menos perrengue, mais match 💚</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-black mb-6 lg:mb-8 leading-tight">
-              Tá caro?{' '}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-black mb-6 lg:mb-8 leading-tight flex flex-col items-center lg:items-start">
+              <span>Tá caro?</span>
               <span className="bg-gradient-to-r from-[#DFFF00] via-cyan-300 to-purple-300 bg-clip-text text-transparent">
                 Divide aê.
               </span>
@@ -38,7 +43,10 @@ const Hero: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start mb-8 lg:mb-12">
-              <button className="group relative bg-gradient-to-r from-[#DFFF00] to-cyan-300 text-[#4F00BC] px-8 sm:px-12 py-4 sm:py-6 rounded-2xl font-black text-xl sm:text-2xl transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl mx-auto sm:mx-0">
+              <button 
+                onClick={() => scrollToSection('final-cta')} 
+                className="group relative bg-gradient-to-r from-[#DFFF00] to-cyan-300 text-[#4F00BC] px-8 sm:px-12 py-4 sm:py-6 rounded-2xl font-black text-xl sm:text-2xl transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl mx-auto sm:mx-0"
+              >
                 <div className="flex items-center justify-center gap-3 relative z-10">
                   <span>Quero meu apê!</span>
                   <ArrowRight size={24} className="transform group-hover:translate-x-2 transition-transform duration-300" />
